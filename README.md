@@ -12,4 +12,6 @@ Este proyecto de Windows Forms en C# proporciona una interfaz gráfica simple pa
 
 
 ## Descarga del programa
-https://drive.google.com/file/d/1sTxPM3JCYCynKoT3CrVZtlmfwUCB_Rvb/view?usp=sharing
+[Aplicación](https://drive.google.com/file/d/1msyD9qoEYEn1Mc8MbyhdXopY4S3SLF3s/)
+
+[Ejecutable](https://drive.google.com/file/d/1sTxPM3JCYCynKoT3CrVZtlmfwUCB_Rvb/)
