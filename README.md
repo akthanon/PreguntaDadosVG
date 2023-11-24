@@ -9,3 +9,7 @@ Este proyecto de Windows Forms en C# proporciona una interfaz gráfica simple pa
 3. **Define el número de tiros (opcional):** Si eliges la opción de definir, habilita la casilla y especifica el número de tiros.
 4. **Presiona el botón "Calcular":** Esto generará una tabla con los resultados de la probabilidad para cada número de tiros.
 5. **Guardar o Limpiar:** Puedes guardar los resultados o limpiar la pantalla según tus necesidades.
+
+
+## Descarga del programa
+https://drive.google.com/file/d/1sTxPM3JCYCynKoT3CrVZtlmfwUCB_Rvb/view?usp=sharing
