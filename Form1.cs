@@ -106,12 +106,17 @@ namespace PreguntaDadosVG
                             case "de obtener todas las opciones":
                                 resultado = ProbTodos(dadoInt, i);
                                 break;
-
                             case "de obtener una opción":
                                 resultado = ProbLanza(dadoInt, i);
                                 break;
                             case "de obtener una opción antes del lanzamiento dado":
                                 resultado = ProbAnt(dadoInt, i);
+                                break;
+                            case "de no obtener el resultado deseado":
+                                resultado = 1.0 - ProbTodos(dadoInt, i);
+                                break;
+                            case "de no obtener la opción en el tiro dado":
+                                resultado = 1.0 - ProbLanza(dadoInt, i);
                                 break;
                         }
                         dataGridView1.Rows.Add(i, resultado);
@@ -128,12 +133,17 @@ namespace PreguntaDadosVG
                         case "de obtener todas las opciones":
                             resultado = ProbTodos(dadoInt, tiro);
                             break;
-
                         case "de obtener una opción":
                             resultado = ProbLanza(dadoInt, tiro);
                             break;
                         case "de obtener una opción antes del lanzamiento dado":
                             resultado = ProbAnt(dadoInt, tiro);
+                            break;
+                        case "de no obtener el resultado deseado":
+                            resultado = 1.0 - ProbTodos(dadoInt, tiro);
+                            break;
+                        case "de no obtener la opción en el tiro dado":
+                            resultado = 1.0 - ProbLanza(dadoInt, tiro);
                             break;
                     }
 

@@ -103,7 +103,9 @@
             this.opcionesBox.Items.AddRange(new object[] {
             "de obtener todas las opciones",
             "de obtener una opción",
-            "de obtener una opción antes del lanzamiento dado"});
+            "de obtener una opción antes del lanzamiento dado",
+            "de no obtener el resultado deseado",
+            "de no obtener la opción en el tiro dado"});
             this.opcionesBox.Location = new System.Drawing.Point(12, 121);
             this.opcionesBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.opcionesBox.Name = "opcionesBox";
