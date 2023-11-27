@@ -254,36 +254,37 @@ namespace PreguntaDadosVG
 
             if (valorDado == 0)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_0.png");
+                imagen = Properties.Resources.dado_0;
             }
             else if (valorDado == 1)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_1.png");
+                imagen = Properties.Resources.dado_1;
             }
             else if (valorDado == 2)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_2.png");
+                imagen = Properties.Resources.dado_2;
             }
             else if (valorDado == 3)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_3.png");
+                imagen = Properties.Resources.dado_3;
             }
             else if (valorDado == 4)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_4.png");
+                imagen = Properties.Resources.dado_4;
             }
             else if (valorDado == 5)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_5.png");
+                imagen = Properties.Resources.dado_5;
             }
             else if (valorDado == 6)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_6.png");
+                imagen = Properties.Resources.dado_6;
             }
             else if (valorDado >= 7)
             {
-                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_gt7.png");
-            }    
+                imagen = Properties.Resources.dado_gt7;
+            }
+
 
 
 
