@@ -41,9 +41,14 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.botonRoll = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cuadroResultado = new System.Windows.Forms.Label();
+            this.imagenDado = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tamDadoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTiros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenDado)).BeginInit();
             this.SuspendLayout();
             // 
             // botoncito
@@ -137,6 +142,7 @@
             0,
             0,
             0});
+            this.tamDadoBox.ValueChanged += new System.EventHandler(this.tamDadoBox_ValueChanged);
             // 
             // label1
             // 
@@ -192,12 +198,59 @@
             this.Column2.Name = "Column2";
             this.Column2.Width = 130;
             // 
+            // botonRoll
+            // 
+            this.botonRoll.Location = new System.Drawing.Point(696, 13);
+            this.botonRoll.Name = "botonRoll";
+            this.botonRoll.Size = new System.Drawing.Size(181, 78);
+            this.botonRoll.TabIndex = 14;
+            this.botonRoll.Text = "Tirar Dado";
+            this.botonRoll.UseVisualStyleBackColor = true;
+            this.botonRoll.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(742, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Resultado:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // cuadroResultado
+            // 
+            this.cuadroResultado.AutoSize = true;
+            this.cuadroResultado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cuadroResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuadroResultado.Location = new System.Drawing.Point(772, 226);
+            this.cuadroResultado.Name = "cuadroResultado";
+            this.cuadroResultado.Size = new System.Drawing.Size(38, 41);
+            this.cuadroResultado.TabIndex = 16;
+            this.cuadroResultado.Text = "0";
+            this.cuadroResultado.Click += new System.EventHandler(this.cuadroResultado_Click);
+            // 
+            // imagenDado
+            // 
+            this.imagenDado.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.imagenDado.InitialImage = null;
+            this.imagenDado.Location = new System.Drawing.Point(714, 167);
+            this.imagenDado.Name = "imagenDado";
+            this.imagenDado.Size = new System.Drawing.Size(150, 150);
+            this.imagenDado.TabIndex = 17;
+            this.imagenDado.TabStop = false;
+            this.imagenDado.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // PreguntasDadosVI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(699, 420);
+            this.ClientSize = new System.Drawing.Size(887, 420);
+            this.Controls.Add(this.cuadroResultado);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.botonRoll);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.numTiros);
             this.Controls.Add(this.label1);
@@ -208,6 +261,7 @@
             this.Controls.Add(this.botonClear);
             this.Controls.Add(this.botonCerrar);
             this.Controls.Add(this.botoncito);
+            this.Controls.Add(this.imagenDado);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -218,6 +272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tamDadoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTiros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenDado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,6 +292,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button botonRoll;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label cuadroResultado;
+        private System.Windows.Forms.PictureBox imagenDado;
     }
 }
 

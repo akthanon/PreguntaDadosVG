@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace PreguntaDadosVG
 {
@@ -18,6 +19,7 @@ namespace PreguntaDadosVG
         {
             
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,6 +28,12 @@ namespace PreguntaDadosVG
             style.Format = "P"; // Utilizar el formato de porcentaje
             dataGridView1.Columns["Column2"].DefaultCellStyle = style;
             definirBox.Checked = true;
+
+            Bitmap imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_6.png");
+
+            // Set the image to the PictureBox
+            imagenDado.Image = imagen;
+
         }
 
 
@@ -214,6 +222,74 @@ namespace PreguntaDadosVG
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            int a = (int)tamDadoBox.Value;
+            cuadroResultado.Text= rand.Next(1,a+1).ToString(); 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cuadroResultado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tamDadoBox_ValueChanged(object sender, EventArgs e)
+        {
+            Bitmap imagen = null; // Declarar la variable fuera de las condiciones
+
+            int valorDado = (int)tamDadoBox.Value;
+
+            if (valorDado == 0)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_0.png");
+            }
+            else if (valorDado == 1)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_1.png");
+            }
+            else if (valorDado == 2)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_2.png");
+            }
+            else if (valorDado == 3)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_3.png");
+            }
+            else if (valorDado == 4)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_4.png");
+            }
+            else if (valorDado == 5)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_5.png");
+            }
+            else if (valorDado == 6)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_6.png");
+            }
+            else if (valorDado >= 7)
+            {
+                imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_gt7.png");
+            }    
+
+
+
+
+            // Set the image to the PictureBox
+            imagenDado.Image = imagen;
         }
     }
 }
