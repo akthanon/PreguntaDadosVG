@@ -32,7 +32,7 @@ namespace PreguntaDadosVG
             Bitmap imagen = new Bitmap(@"D:\Proyectos\PreguntaDadosVG\Resources\dado_6.png");
 
             // Set the image to the PictureBox
-            imagenDado.Image = imagen;
+            cuadroResultado.Image = imagen;
 
         }
 
@@ -290,7 +290,7 @@ namespace PreguntaDadosVG
 
 
             // Set the image to the PictureBox
-            imagenDado.Image = imagen;
+            cuadroResultado.Image = imagen;
         }
     }
 }

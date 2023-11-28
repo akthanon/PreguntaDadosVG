@@ -44,11 +44,9 @@
             this.botonRoll = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cuadroResultado = new System.Windows.Forms.Label();
-            this.imagenDado = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tamDadoBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTiros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenDado)).BeginInit();
             this.SuspendLayout();
             // 
             // botoncito
@@ -66,6 +64,7 @@
             // 
             this.botonCerrar.AccessibleName = "";
             this.botonCerrar.BackColor = System.Drawing.Color.Crimson;
+            this.botonCerrar.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.botonCerrar.Location = new System.Drawing.Point(271, 350);
             this.botonCerrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonCerrar.Name = "botonCerrar";
@@ -221,26 +220,20 @@
             // 
             // cuadroResultado
             // 
-            this.cuadroResultado.AutoSize = true;
-            this.cuadroResultado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cuadroResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cuadroResultado.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.cuadroResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuadroResultado.Location = new System.Drawing.Point(772, 226);
+            this.cuadroResultado.ForeColor = System.Drawing.Color.Honeydew;
+            this.cuadroResultado.Image = global::PreguntaDadosVG.Properties.Resources.dado_6;
+            this.cuadroResultado.Location = new System.Drawing.Point(715, 183);
             this.cuadroResultado.Name = "cuadroResultado";
-            this.cuadroResultado.Size = new System.Drawing.Size(38, 41);
+            this.cuadroResultado.Size = new System.Drawing.Size(150, 150);
             this.cuadroResultado.TabIndex = 16;
             this.cuadroResultado.Text = "0";
+            this.cuadroResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cuadroResultado.Click += new System.EventHandler(this.cuadroResultado_Click);
-            // 
-            // imagenDado
-            // 
-            this.imagenDado.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.imagenDado.InitialImage = null;
-            this.imagenDado.Location = new System.Drawing.Point(714, 167);
-            this.imagenDado.Name = "imagenDado";
-            this.imagenDado.Size = new System.Drawing.Size(150, 150);
-            this.imagenDado.TabIndex = 17;
-            this.imagenDado.TabStop = false;
-            this.imagenDado.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PreguntasDadosVI
             // 
@@ -261,7 +254,6 @@
             this.Controls.Add(this.botonClear);
             this.Controls.Add(this.botonCerrar);
             this.Controls.Add(this.botoncito);
-            this.Controls.Add(this.imagenDado);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -272,7 +264,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tamDadoBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTiros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenDado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,7 +286,6 @@
         private System.Windows.Forms.Button botonRoll;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label cuadroResultado;
-        private System.Windows.Forms.PictureBox imagenDado;
     }
 }
 
