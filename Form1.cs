@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -228,7 +229,16 @@ namespace PreguntaDadosVG
         {
             Random rand = new Random();
             int a = (int)tamDadoBox.Value;
-            cuadroResultado.Text= rand.Next(1,a+1).ToString(); 
+            for (int i = 0; i<100; i++) 
+            {
+                cuadroResultado.ForeColor = Color.Red;
+                cuadroResultado.Text = rand.Next(1, a + 1).ToString();
+                Application.DoEvents();
+                Thread.Sleep(10);
+            }
+            cuadroResultado.ForeColor = SystemColors.Window;
+            cuadroResultado.Text = rand.Next(1, a + 1).ToString();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -272,15 +282,19 @@ namespace PreguntaDadosVG
             {
                 imagen = Properties.Resources.dado_4;
             }
-            else if (valorDado == 5)
-            {
-                imagen = Properties.Resources.dado_5;
-            }
             else if (valorDado == 6)
             {
                 imagen = Properties.Resources.dado_6;
             }
-            else if (valorDado >= 7)
+            else if (valorDado == 12)
+            {
+                imagen = Properties.Resources.dado_12;
+            }
+            else if (valorDado == 20)
+            {
+                imagen = Properties.Resources.dado_20;
+            }
+            else
             {
                 imagen = Properties.Resources.dado_gt7;
             }

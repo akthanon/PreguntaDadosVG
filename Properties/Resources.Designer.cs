@@ -83,9 +83,29 @@ namespace PreguntaDadosVG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dado_12 {
+            get {
+                object obj = ResourceManager.GetObject("dado_12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dado_2 {
             get {
                 object obj = ResourceManager.GetObject("dado_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dado_20 {
+            get {
+                object obj = ResourceManager.GetObject("dado_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,16 +126,6 @@ namespace PreguntaDadosVG.Properties {
         internal static System.Drawing.Bitmap dado_4 {
             get {
                 object obj = ResourceManager.GetObject("dado_4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap dado_5 {
-            get {
-                object obj = ResourceManager.GetObject("dado_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
